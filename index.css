@@ -14,12 +14,17 @@ body {
 }
 
 h1 {
-  font-family: "pacifico";
+  font-family: "Pacifico", cursive;
   font-style: italic;
   font-size: 5rem;
   color: darkcyan;
   margin: 0 0 6px 0;
 }
+
+section.intro h2.intro-title {
+    font-size: 6rem;
+}
+
 
 p {
   color: darkslateblue;
