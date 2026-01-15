@@ -22,7 +22,8 @@ h1 {
 }
 
 section.intro h2.intro-title {
-    font-size: 6rem;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
