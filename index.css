@@ -6,6 +6,82 @@ html {
   box-sizing: border-box;
 }
 
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.topbar-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+}
+
+.brand {
+  color: darkcyan;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Pacifico, cursive;
+  letter-spacing: 0.15em;
+}
+
+.topbar-nav {
+  display: none;
+  gap: 10px;
+}
+
+.topbar-nav a {
+  text-decoration: none;
+  color: darkcyan;
+  font-weight: 650;
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.topbar-nav a:hover {
+  background: rgba(0, 139, 139, 0.12);
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.topbar-link {
+  color: darkcyan;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.topbar-cta {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: darkcyan;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+@media (min-width: 800px) {
+  .topbar-inner {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .topbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 body {
   margin: 0;
   padding: 18px;
@@ -19,6 +95,7 @@ h1 {
   font-size: 5rem;
   color: darkcyan;
   margin: 0 0 6px 0;
+  letter-spacing: 0.08em;
 }
 
 section.intro h2.intro-title {
