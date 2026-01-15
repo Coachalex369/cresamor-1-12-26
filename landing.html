@@ -13,50 +13,109 @@
 
   <body>
     <h1>Cresamor</h1>
-    <p>Your Film, Your Way</p>
+    <h2>Your Film, Your Way</h2>
+    <form onsubmit="return false;">
+      <input type="email" placeholder="Email address" required />
+      <input type="text" placeholder="User Name" required/>
+      <button type="submit">Start Now</button>
+    </form>
+
+  <section class="intro">
+  <h2 class="intro-title">Built for the whole team</h2>
+
+  <p class="intro-text">
+     All your film, highlights, and team updates in one place
+    Cresamor is an athlete-focused platform coaches love. Share highlights, stay organized, and keep everyone in the loop.
+  </p>
+
+  <ul class="intro-bullets">
+    <li>Post your own highlights</li>
+    <li>Pee-Wee through Senior Night</li>
+    <li>Grandparents can watch live</li>
+    <li>Team communication that keeps everyone aligned</li>
+    <li>Live scheduling so no one misses a rep</li>
+    <li>Film breakdown for class and competition</li>
+    <li>Save the best plays for the future</li>
+  </ul>
+</section>
+
+  <div class="intro-nav">
+    <a href="#communication">Communication</a>
+    <a href="#film">Film Sessions</a>
+    <a href="#schedule">Scheduling</a>
+    <a href="#highlights">Highlights & Clips</a>
+  </div>
+</section>
+
     <form>
       <input type="email" placeholder="Email address" required />
       <input type="text" placeholder="User Name" required/>
-      <button type="submit">Get Started</button>
+      <button type="submit">Join</button>
     </form>
 
-    <p>
-      Cresamor is an easy, athlete focused, team management tool coaches love.
-      <a href="#communication">Communication</a>
-      <a href="#film">Film Sessions</a>
-      <a href="#schedule">Scheduling</a>
-      <a href="#highlights">Highlights & Clips</a>
+    <section id="communication" class="feature">
+  <img src="./images/communication.png" alt="Coach, athlete, and parent connected through team communication" />
+  <div class="feature-text">
+    <h2>Communication</h2>
+    <p class="pitch">
+      No one is left out of the loop: coach, athlete, and parent. Fewer missed updates, fewer side-chats, more time spent on the work.
     </p>
+    <ul class="pitch-points">
+      <li>Fast updates for changes</li>
+      <li>Everyone stays aligned</li>
+      <li>Less confusion, more reps</li>
+    </ul>
+  </div>
+</section>
 
-    <form>
+<section id="film" class="feature feature--reverse">
+  <img src="./images/film-sessions.png" alt="Team learning from projected game film in a classroom session" />
+  <div class="feature-text">
+    <h2>Film Sessions</h2>
+    <p class="pitch">
+      Classroom Sessions = Learn to Win. Breakdowns become lessons, and lessons become wins.
+    </p>
+    <ul class="pitch-points">
+      <li>Coach-led learning</li>
+      <li>See it, fix it, repeat</li>
+      <li>Build smarter athletes</li>
+    </ul>
+  </div>
+</section>
+
+<section id="schedule" class="feature">
+  <img src="./images/scheduling.png" alt="Team schedule shown on a calendar screen" />
+  <div class="feature-text">
+    <h2>Scheduling</h2>
+    <p class="pitch">
+      One schedule everyone trusts. Practices, games, changes, reminders… all in the same place.
+    </p>
+    <ul class="pitch-points">
+      <li>Live updates</li>
+      <li>Fewer missed events</li>
+      <li>Family-friendly planning</li>
+    </ul>
+  </div>
+</section>
+
+<section id="highlights" class="feature feature--reverse">
+  <img src="./images/highlights.png" alt="Highlight reel clip displayed on a phone" />
+  <div class="feature-text">
+    <h2>Highlights & Clips</h2>
+    <p class="pitch">
+      Post the moments that matter. Build a highlight reel athletes actually come back to.
+    </p>
+    <ul class="pitch-points">
+      <li>Clip and share fast</li>
+      <li>Keep motivation high</li>
+      <li>Save memories for later</li>
+    </ul>
+    <form onsubmit="return false;">
       <input type="email" placeholder="Email address" required />
       <input type="text" placeholder="User Name" required/>
-      <button type="submit">Get Started</button>
+      <button type="submit">Start Now</button>
     </form>
-
-    <section id="communication">
-        <h2>Communication</h2>
-        <p>Message coaches, athletes, and parents without chaos.</p>
-    </section>
-    <section id="film">
-        <h2>Film Sessions</h2>
-        <p>Upload, review, and break down film together.</p>
-    </section>
-    <section id="schedule">
-        <h2>Scheduling</h2>
-        <p>Games, practices, and updates in one place.</p>
-    </section>
-    <section id="highlights">
-        <h2>Highlights & Clips</h2>
-        <p>Create and share highlight clips athletes actually watch.</p>
-    </section>
-    <section>
-        <p>Start Your Highlight Reel Today</p>
-    <form>
-      <input type="email" placeholder="Email address" required />
-      <input type="text" placeholder="User Name" required/>
-      <button type="submit">Get Started</button>
-    </form>
-    </section>
+  </div>
+</section>
   </body>
 </html>
