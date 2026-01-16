@@ -25,9 +25,10 @@ html {
 
 .brand {
   color: darkcyan;
+  -webkit-text-stroke: 2px rgb(1, 74, 74);
   text-decoration: none;
   font-weight: 600;
-  font-family: Pacifico, cursive;
+  font-family: "Caesar Dressing", system-ui;
   letter-spacing: 0.15em;
 }
 
@@ -50,8 +51,9 @@ html {
 
 .topbar-actions {
   display: flex;
-  gap: 10px;
+  gap: 1em;
   align-items: center;
+  justify-content: right;
 }
 
 .topbar-link {
@@ -60,14 +62,28 @@ html {
   font-weight: 700;
 }
 
-.topbar-cta {
-  display: inline-block;
-  padding: 10px 12px;
-  border-radius: 999px;
-  background: darkcyan;
-  color: white;
+.topbar-About {
+  color: darkcyan;
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 600;
+  font-family: "Caesar Dressing", system-ui;
+  letter-spacing: 0.15em;
+}
+
+.topbar-Contact {
+  color: darkcyan;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Caesar Dressing", system-ui;
+  letter-spacing: 0.15em;
+}
+
+.topbar-Vision {
+  color: darkcyan;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Caesar Dressing", system-ui;
+  letter-spacing: 0.15em;
 }
 
 @media (min-width: 800px) {
@@ -81,32 +97,44 @@ html {
   }
 }
 
+@media (min-width: 600px) {
+  body {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+}
+
+
 
 body {
   margin: 0;
   padding: 18px;
   background-color: ivory;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "Reenie Beanie", cursive;
+  font-size: 1.7em;
+
 }
 
 h1 {
-  font-family: "Pacifico", cursive;
-  font-style: italic;
+  font-family: "Caesar Dressing", system-ui;
   font-size: 5rem;
+  color: ivory;
+  -webkit-text-stroke: 2px rgb(1, 74, 74);
   color: darkcyan;
   margin: 0 0 6px 0;
   letter-spacing: 0.08em;
 }
 
 section.intro h2.intro-title {
-    font-size: 4rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    font-family: "Reenie Beanie", cursive;
+
 }
 
 
 p {
   color: darkslateblue;
-  font-size: 1.1rem;
+  font-size: 2rem;
   line-height: 1.6;
   margin: 10px 0;
 }
@@ -144,8 +172,8 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 139, 139, 0.2); /* lighter cyan */
-  color: darkcyan;                         /* flip text color */
+  background-color: rgba(0, 139, 139, 0.2); 
+  color: darkcyan; 
   transform: translateY(-3px);
 }
 .intro-text {
@@ -223,12 +251,12 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-section h2 {
+h2 {
   margin: 0 0 10px 0;
-  color: darkcyan;
+  color: darkgray
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 3rem;
 }
 
 img {
