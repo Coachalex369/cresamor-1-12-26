@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>About | Cresamor</title>
+    <title>Contact | Cresamor</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Reenie+Beanie&display=swap" rel="stylesheet">
 
-    
     <link rel="stylesheet" href="./index.css" />
   </head>
 
@@ -31,7 +30,32 @@
 
     <main>
       <h1>Contact Us</h1>
-      <p><section>cresamor.alex@gmail.com</section> or <section>123-867-5309</section></p>
+
+      <section>
+        <p>
+          Email:
+          <a href="mailto:cresamor.alex@gmail.com">cresamor.alex@gmail.com</a>
+          <br>
+          Phone: <a href=#"tel:1238675309">123-867-5309</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Send a message</h2>
+
+        <form action="mailto:cresamor.alex@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
